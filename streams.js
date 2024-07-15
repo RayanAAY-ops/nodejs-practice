@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const readStream = fs.createReadStream('home.html', {encoding: 'utf8'})
+const readStream = fs.createReadStream('./views/home.html', {encoding: 'utf8'})
 const writeStream = fs.createWriteStream('destination.txt');
 
 // Event listener to data chunk

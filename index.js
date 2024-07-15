@@ -15,7 +15,7 @@ const app = express();
 */
 
 app.get("/", async(request, response) => {
-    response.send( await readFile('./home.html', 'utf8'))
+    response.send( await readFile('./views/home.html', 'utf8'))
 
 });
 
