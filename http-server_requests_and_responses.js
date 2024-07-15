@@ -1,6 +1,14 @@
 const http = require('http')
 const fs = require('fs');
+const _ = require('lodash')
+
 const server = http.createServer((req, res) => {
+
+    // loadash:
+    //  a JavaScript utility library that provides helpful methods 
+    // for manipulating arrays, objects, and other types of data
+    const num = _.random(0, 20);
+    console.log(num)
     console.log(req.url, req.method)
 
     // set Header content-type
